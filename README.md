@@ -9,9 +9,9 @@ Em seguida compara com a escolha do sistema gerada aleatoriamente, seguindo as r
 ## Como construir o jogo?
 Aplicação desenvolvida em C#, ultilizando um sistema de laço de repetição **(while)**, onde solicita ao usuario que escolha uma das opções para jogar. Em conjunto com isso o sistema gera de forma aleatoria uma strig entre as que estão na  *Array* . 
 
-Após isso informa ao jogador a escolha gerada aleatoriamente e  compara a resposta do jogador com a string gerada **(if, else)**;
+Após isso informa ao jogador a escolha gerada aleatoriamente e  compara a resposta do jogador com a string gerada ;
 
-Em sequencia informa ao usuario o resultado do jogo, seguindo as regras de derrota, vitoria e empate do tradicional jogo Pedra, papel e tesoura.
+Em sequencia informa ao usuario o resultado do jogo,**(if, else)** , seguindo as regras de derrota, vitoria e empate do tradicional jogo Pedra, papel e tesoura.
 
 ### Comandos básicos
 **git status** (Verifica o estado dos arquivos do r epositorio)
