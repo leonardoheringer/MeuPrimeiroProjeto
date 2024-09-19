@@ -1,12 +1,12 @@
-﻿Random random = new Random();
-        string[] opções = { "Pedra", "Papel", "Tesoura" };
+﻿       ﻿Random random = new Random();
+        string[] opções = { "pedra", "papel", "tesoura" };
 
         while (true)
         {
             Console.Write("Escolha (Pedra, Papel ou Tesoura ): ");
-            string escolhaJogador = Console.ReadLine();
+            string escolhaJogador = Console.ReadLine().ToLower();
 
-            
+           
 
             if (Array.IndexOf(opções, escolhaJogador) == -1)
             {
@@ -19,9 +19,11 @@
 
             if (escolhaJogador == escolhaComputador)
                 Console.WriteLine("Empate!");
-            else if ((escolhaJogador == "Pedra" && escolhaComputador == "Tesoura") ||
-                     (escolhaJogador == "Papel" && escolhaComputador == "Pedra") ||
-                     (escolhaJogador == "Tesoura" && escolhaComputador == "Papel"))
+            else if ((escolhaJogador == "pedra" && escolhaComputador == "tesoura") ||
+                     (escolhaJogador == "papel" && escolhaComputador == "pedra") ||
+                     (escolhaJogador == "tesoura" && escolhaComputador == "papel"))
+
+
                 Console.WriteLine("Você ganhou!");
             else
                 Console.WriteLine("Você perdeu!");
